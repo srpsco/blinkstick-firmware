@@ -115,9 +115,17 @@ uchar usbFunctionWrite(uchar *data, uchar len)
 	if (reportId == 1)
 	{
 		//Set color
+		/*Original LED Config
 		OCR1B = 255 - data[1];
 		OCR0B = 255 - data[2];
 		OCR0A = 255 - data[3];
+		*/ 
+
+		//Set color
+		//New LED Config
+		OCR0A = 255 - data[1];
+		OCR0B = 255 - data[2];
+		OCR1B = 255 - data[3];
 
 		return 1;
 	}
