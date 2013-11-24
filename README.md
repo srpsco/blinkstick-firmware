@@ -1,6 +1,8 @@
 BlinkStick Firmware
 ===================
 
+This is a fork of the original project made to compensate for a differrent pin configuration of the LED
+
 BlinkStick is a DIY open source USB RGB LED. It's small, the 
 size of a USB flash stick and designed to be easy to assemble. 
 
